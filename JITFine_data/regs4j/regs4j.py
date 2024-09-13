@@ -21,7 +21,7 @@ def main():
     # 保存结果为 PKL 文件
     df_unique_commit_hash.to_pickle('./data/alibaba_fastjson_unique_bic.pkl')
 
-    print("数据已成功保存为PKL文件：./data/alibaba_fastjson_unique_bic.pkl")
+    print("数据已成功保存为PKL文件：./data/bug_unique_bic.pkl")
 
 if __name__ == "__main__":
     main()
