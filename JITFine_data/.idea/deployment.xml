@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="server_5" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="aliyun_3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/kevinyoung/JITFine/JITFine" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="server_5">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data1/kaiwenyang/JITFine_data/JITFine" local="$PROJECT_DIR$" web="/" />
+            <mapping local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
