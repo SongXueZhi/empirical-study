@@ -1,0 +1,7 @@
+
+npython:S1542"QRename function "gitAnnotate" to match the regular expression ^[a-z_][a-z0-9_]*$.(ž«¹€ýÿÿÿÿ
+Spython:S1481"6Replace unused local variable "lines_manual" with "_".(”æµ…ÿÿÿÿÿ
+qpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 55 to the 15 allowed.(ž«¹€ýÿÿÿÿ
+npython:S1226"QIntroduce a new variable or use its initial value before reassigning 'repo_name'.(ž«¹€ýÿÿÿÿ
+6python:S125f"Remove this commented out code.(´þáö
+<python:S125µ"Remove this commented out code.(‰¨òûøÿÿÿÿ

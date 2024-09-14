@@ -1,0 +1,48 @@
+
+dpython:S2208"GImport only needed names or import the module and then use its members.(ÀñÉ±úÿÿÿÿ
+dpython:S2208"GImport only needed names or import the module and then use its members.(à®••þÿÿÿÿ
+npython:S117<"WRename this parameter "commitFiles" to match the regular expression ^[_a-z][a-z0-9_]*$.(Žàš
+ppython:S117<"YRename this parameter "devExperience" to match the regular expression ^[_a-z][a-z0-9_]*$.(Žàš
+wpython:S117N"`Rename this local variable "directoriesSeen" to match the regular expression ^[_a-z][a-z0-9_]*$.(Šá
+upython:S117T"YRename this local variable "fileAges" to match the regular expression ^[_a-z][a-z0-9_]*$.(«¯¬Èþÿÿÿÿ
+ppython:S117Á"YRename this local variable "fileDirs" to match the regular expression ^[_a-z][a-z0-9_]*$.(‘Üüp
+npython:S117{"WRename this local variable "fileLa" to match the regular expression ^[_a-z][a-z0-9_]*$.(Õº­”
+npython:S117|"WRename this local variable "fileLd" to match the regular expression ^[_a-z][a-z0-9_]*$.(î»¼ 
+spython:S117þ"[Rename this local variable "fileLocMod" to match the regular expression ^[_a-z][a-z0-9_]*$.(šû¤â
+qpython:S117ƒ"YRename this local variable "fileName" to match the regular expression ^[_a-z][a-z0-9_]*$.(ø¢ÞŸ
+rpython:S117¹"[Rename this local variable "fileObject" to match the regular expression ^[_a-z][a-z0-9_]*$.(»ïÂ]
+upython:S117s"YRename this local variable "fileStat" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨‡Þöüÿÿÿÿ
+qpython:S117l"ZRename this local variable "filesSeen" to match the regular expression ^[_a-z][a-z0-9_]*$.(×ö²
+zpython:S117P"cRename this local variable "locModifiedPerFile" to match the regular expression ^[_a-z][a-z0-9_]*$.(§ÆõÀ
+xpython:S117 "[Rename this local variable "prevAuthor" to match the regular expression ^[_a-z][a-z0-9_]*$.(˜ïººþÿÿÿÿ
+tpython:S117š"\Rename this local variable "prevAuthors" to match the regular expression ^[_a-z][a-z0-9_]*$.( ÝÊ×
+tpython:S117›"\Rename this local variable "prevChanged" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨¾Âé
+xpython:S117˜"`Rename this local variable "prevFileChanged" to match the regular expression ^[_a-z][a-z0-9_]*$.(×®É
+upython:S117™"XRename this local variable "prevLOC" to match the regular expression ^[_a-z][a-z0-9_]*$.(šÓÝÖúÿÿÿÿ
+vpython:S117J"_Rename this local variable "statProperties" to match the regular expression ^[_a-z][a-z0-9_]*$.(à¹šü
+vpython:S117M"_Rename this local variable "subsystemsSeen" to match the regular expression ^[_a-z][a-z0-9_]*$.(¦”Ò÷
+xpython:S117j"aRename this local variable "totalLOCModified" to match the regular expression ^[_a-z][a-z0-9_]*$.(©Ã×
+vpython:S117”"^Rename this local variable "totalModified" to match the regular expression ^[_a-z][a-z0-9_]*$.(ï‰×È
+ppython:S117<"YRename this parameter "unixTimeStamp" to match the regular expression ^[_a-z][a-z0-9_]*$.(Žàš
+tpython:S100<"]Rename method "_getCommitStatsProperties" to match the regular expression ^[a-z_][a-z0-9_]*$.(Žàš
+lpython:S3776<"TRefactor this function to reduce its Cognitive Complexity from 61 to the 15 allowed.(Žàš
+Tpython:S5754}"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+<python:S125å"Remove this commented out code.(Í‹·Ïøÿÿÿÿ
+Upython:S5754ð"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+wpython:S117À"ZRename this local variable "allCommit" to match the regular expression ^[_a-z][a-z0-9_]*$.(­šÇýÿÿÿÿ
+spython:S117¼"\Rename this local variable "commitFiles" to match the regular expression ^[_a-z][a-z0-9_]*$.(É±®P
+xpython:S117î"[Rename this local variable "commitHash" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÞŠ§ùÿÿÿÿ
+rpython:S117Á"[Rename this local variable "commitList" to match the regular expression ^[_a-z][a-z0-9_]*$.(‹œº
+tpython:S117Ø"]Rename this local variable "commitObject" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡«•:
+vpython:S117½"^Rename this local variable "devExperience" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ó©âº
+upython:S117É"XRename this local variable "isMerge" to match the regular expression ^[_a-z][a-z0-9_]*$.(†íäþÿÿÿÿ
+upython:S117Õ"]Rename this local variable "prettyCommit" to match the regular expression ^[_a-z][a-z0-9_]*$.(·îµ­
+xpython:S117Û"[Rename this local variable "prettyInfo" to match the regular expression ^[_a-z][a-z0-9_]*$.(»®¤èÿÿÿÿÿ
+ppython:S117Þ"XRename this local variable "propStr" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ÿ÷‚Ã
+wpython:S117Ü"ZRename this local variable "propValue" to match the regular expression ^[_a-z][a-z0-9_]*$.(¢¡öþúÿÿÿÿ
+}python:S117Ï"`Rename this local variable "splitCommitStat" to match the regular expression ^[_a-z][a-z0-9_]*$.(åŒó¼ûÿÿÿÿ
+spython:S117Ö"[Rename this local variable "statCommit" to match the regular expression ^[_a-z][a-z0-9_]*$.(äßæ¨
+{python:S117Å"^Rename this local variable "unixTimeStamp" to match the regular expression ^[_a-z][a-z0-9_]*$.(·À²Éÿÿÿÿÿ
+rpython:S3776˜"TRefactor this function to reduce its Cognitive Complexity from 41 to the 15 allowed.(®äÇóøÿÿÿÿ
+<python:S125 "Remove this commented out code.(ÆíÓüÿÿÿÿ
+<python:S125›"Remove this commented out code.(õÐ®øÿÿÿÿ

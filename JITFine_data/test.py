@@ -8,7 +8,8 @@ import pandas as pd
 import os
 import pickle
 
-file_path ='/Users/sxz/Documents/coding/project/JITFine_data/data/fastjson_regression_bugs.pkl'  # sys.argv[1]
+# file_path ='/Users/sxz/Documents/coding/project/JITFine_data/data/fastjson_regression_bugs.pkl'  # sys.argv[1]
+file_path = '/Users/zhjlu/codes/new-graduate-work/empirical-study/JITFine_data/data/all_regression_bugs.pkl'
 def getLogger(log_file):
     # Set up the logger
 
@@ -54,7 +55,7 @@ def main():
 
 
 if __name__ == '__main__':
-    filepath  = ''
+    filepath = ''
     ret = main()
     # 'commit_message', 'la', 'ld',  'nf', 'ns', 'nd', 'entropy', 'ndev', 'lt', 'nuc', 'age', 'exp', 'rexp', 'sexp', 'fix'
     columns = ['project', 'parent_hashes', 'commit_hash', 'author_name', 'author_email', 'author_date',

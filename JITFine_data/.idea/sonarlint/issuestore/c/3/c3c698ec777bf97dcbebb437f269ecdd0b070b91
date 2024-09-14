@@ -1,0 +1,6 @@
+
+spython:S116"WRename this field "associatedWords" to match the regular expression ^[_a-z][_a-z0-9]*$.(…¡‹’ýÿÿÿÿ
+tpython:S117"XRename this parameter "fileLocation" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯àîÃùÿÿÿÿ
+npython:S117"XRename this parameter "fileLocation" to match the regular expression ^[_a-z][a-z0-9_]*$.(›÷“
+opython:S100"YRename method "readInAssociatedWords" to match the regular expression ^[a-z_][a-z0-9_]*$.(›÷“
+gpython:S1000"KRename method "getName" to match the regular expression ^[a-z_][a-z0-9_]*$.(©Áâˆýÿÿÿÿ
