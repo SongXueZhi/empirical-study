@@ -34,7 +34,7 @@ def main():
 
 def getMsg(proj_name, data):
     current_directory = os.getcwd()
-    projPath = os.path.join(current_directory, 'repos', proj_name)
+    projPath = os.path.join(current_directory, "JITFine_data", 'repos', proj_name)
     gr = Git(projPath)
     commits = list(data[data['project_name'] == proj_name]['commit_hash'].drop_duplicates())
     print(proj_name, len(commits))

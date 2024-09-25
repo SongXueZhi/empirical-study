@@ -295,7 +295,7 @@ class Git:
         # 获取当前工作目录
         current_directory = os.getcwd()
        
-        repo_dir = os.path.join(current_directory, repo_dir)
+        repo_dir = os.path.join(current_directory,"JITFine_data", repo_dir)
         print("当前工作目录是:", repo_dir)
 
         cmd = 'git log '
@@ -364,8 +364,6 @@ class Git:
                         isMerge = True
                 if (values[0] == '"commit_hash"'):
                     commitHash = values[1].replace('"', '')
-                    if commitHash == 'f0299220ba7dc33b1865068db0c184147283a9e4':
-                        print('abc')
                     allCommit.append(commitHash)
                 if (values[0] == '"author_name"'):
                     author = values[1].replace('"', '')

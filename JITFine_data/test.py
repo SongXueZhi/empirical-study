@@ -9,7 +9,7 @@ import os
 import pickle
 
 # file_path ='/Users/sxz/Documents/coding/project/JITFine_data/data/fastjson_regression_bugs.pkl'  # sys.argv[1]
-file_path = '/Users/zhjlu/codes/new-graduate-work/empirical-study/JITFine_data/data/all_regression_bugs.pkl'
+file_path = '/Users/sxz/Documents/coding/project/empirical-study/JITFine_data/data/all_regression_bugs.pkl'
 def getLogger(log_file):
     # Set up the logger
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     # print(data)
     import os
     current_directory = os.getcwd()
-    project_path = os.path.join(current_directory, 'data','all_changes_data')
+    project_path = os.path.join(current_directory,"JITFine_data",'data','all_changes_data')
     # 使用 pathlib.Path 来创建目录
     project_path = Path(project_path)
 
