@@ -24,8 +24,6 @@ def main():
         tmp = dict()
         for commit_hash in commits:
             commit = gr.get_commit(commit_hash)
-            if commit.merge:
-                continue
             tmp[commit_hash] = commit.msg.split('git-svn-id')[0].strip()
         all_msg[proj_name] = tmp
         print(len(tmp))
@@ -34,15 +32,17 @@ def main():
 
 def getMsg(proj_name, data):
     current_directory = os.getcwd()
-    projPath = os.path.join(current_directory, "JITFine_data", 'repos', proj_name)
+    # projPath = os.path.join(current_directory, "JITFine_data", 'repos', proj_name)
+    projPath = os.path.join(current_directory, 'repos', proj_name)
     gr = Git(projPath)
     commits = list(data[data['project_name'] == proj_name]['commit_hash'].drop_duplicates())
     print(proj_name, len(commits))
     tmp = dict()
     for commit_hash in commits:
-        commit = gr.get_commit(commit_hash)
-        if commit.merge:
-            continue
+        if commit_hash[1] == '_':
+            commit = gr.get_commit(commit_hash[2:])
+        else:
+            commit = gr.get_commit(commit_hash)
         tmp[commit_hash] = commit.msg.split('git-svn-id')[0].strip()
 
     return tmp

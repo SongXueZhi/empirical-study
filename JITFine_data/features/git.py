@@ -295,7 +295,8 @@ class Git:
         # 获取当前工作目录
         current_directory = os.getcwd()
        
-        repo_dir = os.path.join(current_directory,"JITFine_data", repo_dir)
+        # repo_dir = os.path.join(current_directory,"JITFine_data", repo_dir)
+        repo_dir = os.path.join(current_directory, repo_dir)
         print("当前工作目录是:", repo_dir)
 
         cmd = 'git log '
@@ -339,7 +340,7 @@ class Git:
                 continue
 
             prettyCommit = splitCommitStat[0]
-            statCommit = splitCommitStat[1]
+            statCommit = splitCommitStat[1]  # empty if this is a merge!
 
             commitObject = ""
 
@@ -362,6 +363,9 @@ class Git:
                     parents = values[1].split(' ')
                     if len(parents) == 2:
                         isMerge = True
+                        # todo: may optimize the performance here! It seems that there exists many useless loops
+                        cmd = 'git diff  ' + parents[0].replace('"', '') + ' ' + parents[1].replace('"', '') + " --numstat"
+                        statCommit = str(subprocess.check_output(cmd, shell=True, cwd=repo_dir))
                 if (values[0] == '"commit_hash"'):
                     commitHash = values[1].replace('"', '')
                     allCommit.append(commitHash)
