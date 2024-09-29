@@ -1,0 +1,281 @@
+ID,JITSmart,JITFine,JITLine,LaPredict,DeeperJIT,Deeper,CC2Vec,Bic Action Type,Compatibility Errors,Intrinsic Errors,Location With Fixing Changes,Feature Interaction,Knowledge
+1336,1,1,0,0,1,1,1,"refactor,fix",No,API Misuse,Same Location,0,编程知识; 项目知识
+178,1,1,0,0,0,0,0,enhance,No,Business Error,Different Packages,0,领域知识：定时任务0 0 3 ? * 6什么意思;项目知识：getNextvalue 等接口的意思
+104,1,0,0,0,1,1,1,enhance,Data Flow,No,Different Packages,0,项目知识：0 0 0 24/1 1/12 ? 啥意思
+181,1,0,0,0,1,1,1,enhance,No,Business Error,Same Method,1,编程知识：map，字符串转整数；领域知识：日期解析
+99,1,0,0,0,1,1,1,refactor,No,Business Error,Same Method,0,编程知识：if与while，list
+128,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,编程知识：格式化字符串，接口实现；领域知识：cron表达式；项目知识：对缺省值的处理
+400,0,0,0,0,0,1,0,enhance,No,Unchecked Null,Same Location,0,编程知识
+425,0,0,0,0,0,1,0,enhance,Invocation,No,Same Package,1,项目知识：WriterAsOutputStream.close()之前的实现是什么
+456,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,null
+414,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识：继承，override，null，Collection
+75,0,0,0,0,1,0,1,enhance,Data Flow,No,Same Class,1,编程知识；项目知识
+589,1,0,0,0,0,1,1,enhance,Invocation,No,Same Class,1,编程知识；项目知识
+41,0,0,0,0,0,0,1,fix,No,Unchecked Null,Same Location,1,1. GPT 序列化中的AfterFilter是要做什么;2. references 是什么对象；领域知识和项目知识
+1562,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,1,1. 项目知识
+432,0,0,0,0,0,0,0,fix,Data Flow,No,Different Packages,1,领域知识：ASM 调用方法原理;项目知识FiledInfo构造器干嘛的；fieldInfo 在后续如何使用
+518,0,0,0,0,0,0,1,perf,No,Business Error,Same Method,0,领域知识：char 数字代表的字符;项目知识：scanFieldStringArray的两个类之间的关系，unclosed eorr 经常与bp 有关
+487,0,0,0,0,1,0,1,perf,No,Business Error,Same Class,0,领域知识：ASM 调用方法原理;项目知识 ：_filter在干嘛
+1552,1,0,0,0,0,1,0,enhance,No,API Misuse,Same Location,1,领域知识：mw.visitInsn(ACONST_NULL); DUB 指令啥意思;项目知识：这个逻辑是存到局部变量表，再取出来
+550,0,0,0,0,0,1,0,enhance,No,Business Error,Same Location,0,编程知识；领域知识:get 后面的文本通常是Filed name 首字母大写后的名字
+244,0,0,0,0,1,0,1,perf,No,Business Error,Same Location,0,"基本编程知识：Long 的最大值, long 溢出会如何？;项目知识：scanFieldLong会将 负数value转化为正数"
+610,1,0,0,0,0,1,0,enhance,No,Business Error,Same Class,1,项目知识
+593,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,领域知识：字节码数符号表示
+368,0,0,0,0,1,0,1,fix,No,Cast Error,Same Location,1,编程知识
+508,1,0,0,0,1,1,0,perf,No,Business Error,Same Method,0,ASM
+577,1,1,0,0,1,1,1,perf,Invocation,No,Different Packages,1,ASM
+96,0,0,0,0,1,0,1,fix,Invocation,No,Same Package,1,项目知识
+356,1,0,0,0,0,1,0,perf,No,API Misuse,Same Location,1,项目知识：context 在整个方法中的生命周期
+805,0,0,0,0,1,0,1,fix,No,Business Error,Same Package,1,项目知识
+626,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识：转义；项目知识：JSON解析功能
+82,0,0,0,0,1,0,1,fix,Data Flow,No,Different Packages,1,编程知识：中文字符表示；领域知识：反射获取Classname的API；项目知识：解析中文包
+226,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,1,领域知识：GLM理解和纳秒相关的操作与配置（包括为什么-10纳秒）
+466,0,0,0,0,1,0,1,fix,Data Flow,No,Same Package,0,项目知识：GLM理解测试用例想测试对final字段的修改应无效；GLM理解bic cc是将类的公共字段信息添加到List以便序列化反序列化时使用；领域知识：GLM理解序列化/反序列化规则
+310,0,0,0,0,1,0,1,fix,No,Unchecked Null,Same Class,0,编程知识：空指针
+1770,0,0,0,0,0,0,0,perf,No,Business Error,Same Method,0,编程知识：int溢出（及溢出会变成负数）；领域知识：Float.parseFloat； 项目知识：GLM大致理解scanFieldFloat（）
+182,0,0,0,0,1,1,1,perf,Data Flow,Business Error,Same Package,0,项目知识：1770bug经验（解析浮点数）;编程知识：Java 大整数除法误差（浮点数误差）
+337,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,领域知识：泛型擦除
+448,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,基本编程知识
+711,0,0,0,0,1,0,1,fix,Data Flow,No,Different Packages,0,ASM/JavaBean
+1568,0,0,0,0,1,0,1,"fix,enhance",No,Business Error,Same Method,0,项目知识：应有的判断逻辑，其余无明显知识
+233,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,领域知识：ISO8601编码及时区相关知识
+154,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：移位运算
+603,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,基本编程知识；领域知识：序列化和反序列化项目知识：反序列化作为一个task要配套一个反序列化类
+1,0,0,0,0,0,0,1,fix,Invocation,Uncaught Exception,Same Class,1,编程知识：异常和捕获；领域知识：反射和代理
+200,1,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,仅编程知识（删除了else分支，set millisecond在if不满足时就不执行了）
+61,0,0,0,0,1,0,1,fix,Data Flow,No,Different Packages,1,编程知识（字符串replace）;领域知识（转义，@作为保留字符）
+807,0,0,0,0,1,0,1,enhance,Data Flow,No,Same Class,0,编程知识: call flow，异常与捕获，volatile
+1767,0,0,0,0,1,1,1,enhance,Invocation,No,Same Package,0,编程知识：大写转小写；项目知识：fastjson要求字段名大小写不敏感
+208,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,1,编程知识：public，static等修饰符；项目知识：对日期和对其他数据类型（如整数）的解析
+1575,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,0,编程知识：Map；领域知识：序列化和反序列化
+130,0,0,0,0,0,0,0,fix,No,Cast Error,Same Method,0,编程知识：null判断，三目运算符，toString
+1771,0,0,0,0,1,0,1,fix,Data Flow,No,Different Packages,0,编程知识：赋值并传参，异常处理;领域知识：并发，反射
+381,0,0,0,0,0,0,1,fix,Data Flow,No,Same Method,0,编程知识：变量赋值，setter；领域知识：序列化与反序列化
+490,0,0,0,0,1,0,1,perf,No,Business Error,Same Method,0,编程知识：条件分支等；领域知识：字节码操作，反射
+347,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,1,编程知识：if判断，modifier；领域知识：序列化和反序列化；项目知识：对field的封装
+342,0,0,0,0,1,0,1,fix,No,Cast Error,Same Method,0,编程知识：继承，泛型；领域知识：反射
+393,1,0,0,0,1,1,0,refactor,Data Flow,No,Different Packages,0,编程知识：条件分支，默认值；领域知识：反序列化等
+97,0,1,0,0,1,0,1,fix,Data Flow,No,Different Packages,0,编程知识：程序执行流，if判断，字符串；领域知识：日期格式，字符串反序列化
+462,0,0,0,0,1,0,1,refactor,No,Bussiness Error,Same Method,0,基本编程知识；
+72,0,0,0,0,0,0,0,perf,No,Business Error,Same Method,0,基本编程知识
+605,0,0,0,0,1,0,1,enhance,No,Unchecked Null,Same Location,0,ResolveTask
+1570,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,0,编程知识：继承；领域知识：序列化与反序列化
+1554,0,1,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：字符串转义符；
+396,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,1,编程知识：public；领域知识：Date的文字格式；项目知识：对日期不完全规范格式的解析
+1560,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,0,编程知识：赋值与返回；领域知识：序列化与反序列化
+202,0,0,0,0,1,0,1,enhance,Data Flow,No,Same Package,0,基本编程知识
+21,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,0,编程知识：Map，枚举类型，异常与异常信息；领域知识：cast，序列化和反序列化
+713,0,1,0,0,1,0,1,fix,Data Flow,No,Different Packages,1,编程知识：字符串长度及判断；领域知识：DateFormat的不同格式；项目知识：要处理不同格式的Format
+384,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,1,编程知识：public，空数组；领域知识：序列化与反序列化；项目知识：空数组视为null
+141,0,0,0,0,0,0,0,perf,Invocation,No,Same Class,0,编程知识：类型转换；领域知识：反射
+354,0,0,0,0,0,0,1,fix,No,Business Error,Same Method,0,编程知识：泛型，异常抛出；领域知识：注解；项目知识：toJSONObject出口
+517,0,0,0,0,0,0,1,perf,No,Business Error,Same Method,0,编程知识：数组下标，字符，空白符；领域知识：JSON格式
+197,0,0,0,0,1,0,1,refactor,No,Business Error,Same Location,0,基本编程知识；领域知识：二分查找，Java二分查找的返回值含义
+147,0,0,0,0,0,0,0,perf,No,Business Error,Same Method,0,编程知识：继承和override，泛型
+50,0,0,0,0,1,0,1,fix,Invocation,Business Error,Different Packages,0,编程知识：字符，大小写判断；项目知识：fnv1a_64_lower和fnv1a_64_extract的职责以及是否大小写敏感
+1457,1,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,编程知识：字符与下标；领域知识：序列化与反序列化，时区信息，时区格式
+405,0,0,0,0,1,1,1,enhance,Data Flow,No,Same Package,1,编程知识：文件结束符，类型转换；领域知识：序列化与反序列化，日期格式；项目知识：
+558,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,0,编程知识：接口与实例化，Cloneable，异常抛出；领域知识：反射与newInstance；项目知识：对于空对象给定一个默认对象
+165,0,0,0,0,1,0,1,enhance,Data Flow,No,Same Package,0,编程知识：引用，map；领域知识：序列化及格式；项目知识：空map的处理方式
+62,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：字符串及substring；领域知识：json，字段名风格；项目知识：对含下划线的字段名的处理
+525,0,0,0,0,1,0,1,enhance,No,Unchecked Null,Same Method,0,编程知识：null与判断；领域知识：dalvik安卓虚拟机，lemur阿里云虚拟机
+206,0,0,0,0,1,1,1,perf,No,Business Error,Same Method,0,编程知识：整数溢出；领域知识：浮点数反序列化，Float.parseFloat；项目知识：解析整数与性能优化
+699,1,0,0,0,0,0,1,enhance,Data Flow,No,Different Packages,0,编程知识：函数声明及参数；领域知识：序列化和反序列化；项目知识：对不同参数类型的处理和表示
+221,0,1,0,0,1,0,1,perf,No,Business Error,Same Method,0,编程知识：字符串，命名前缀；领域知识：序列化和反序列化；项目知识：match is前缀
+370,0,0,0,0,1,0,1,perf,No,Business Error,Same Method,0,编程知识：泛型，类型转换；项目知识：type类型
+36,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,1,基本编程知识；领域知识：序列化和反序列化，日期格式；项目知识：SerializerFeature.WriteDateUseDateFormat配置
+1456,1,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,基本编程知识；领域知识：序列化和反序列化，日期格式
+341,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,编程知识：泛型，继承；领域知识：序列化和反序列化；项目知识
+112,0,0,0,0,1,0,1,enhance,Invocation,Business Error,Different Packages,0,编程知识：整数溢出；领域知识：ASM；项目知识：array object parse
+497,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,1,编程知识；项目知识
+497,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,1,编程知识；项目知识
+522,0,0,0,0,0,0,0,enhance,No,Uncaught Exception,Same Location,1,项目知识：cell为空的case
+522,0,0,0,0,0,0,0,enhance,No,Uncaught Exception,Same Location,1,项目知识：cell为空的case
+523,0,0,0,0,0,0,0,fix,No,API Misuse,Same Class,0,编程知识：继承，多态，泛型，集合，迭代器
+496,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：集合，Map的有序和无序；领域知识：对称性
+968,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,基本编程知识
+959,0,0,0,0,1,0,1,enhance,No,API Misuse,Same Location,0,基本编程知识；领域知识：不可变列表的两种初始化方式
+975,0,0,0,0,1,0,1,enhance,Invocation,No,Same Location,1,项目知识
+970,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,基本编程知识；领域知识：转义，结构化模版；项目知识：自动转义模式
+960,0,0,0,0,0,1,1,enhance,Data Flow,No,Different Packages,1,基本编程知识；领域知识：AST与节点；项目知识：普通文本节点和注释节点的实现
+951,0,0,0,0,1,0,1,perf,No,Business Error,Same Method,0,编程知识：数据容器相关（哈希表等），位运算
+966,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,override
+959,0,0,0,0,1,0,1,enhance,No,API Misuse,Same Location,0,基本编程知识；领域知识：不可变列表的两种初始化方式
+976,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,编程知识：switch-case，enum
+968,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,基本编程知识
+1693,0,0,0,0,1,0,1,fix,No,Business Error,Same Location,1,编程知识；领域知识；项目知识
+295,0,0,0,0,0,0,0,fix,Invocation,No,Same Package,0,领域知识：tar文件校验和
+295,0,0,0,0,0,0,0,fix,Invocation,No,Same Package,0,领域知识：tar文件校验和
+296,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,0,领域知识：压缩文件格式相关
+1749,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识；领域知识
+1748,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,1,项目知识：注释中说明对输入是Map的检查（要处理嵌套Map）
+1753,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,基本编程知识；领域知识：迭代器，断言
+484,0,0,0,0,1,0,1,enhance,Invocation,No,Same Package,0,编程知识；领域知识；GPT 什么是TLD和ETLD 和PTLD；项目知识：项目中ETLD支持了私有域名，PTLD不允许支持私有域名
+476,1,0,0,0,0,1,0,enhance,Data Flow,No,Different Packages,1,基本编程知识；领域知识：爬虫，html结构，DOM
+1352,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识：overload；领域知识：PLD和TLD
+1240,0,0,0,0,1,1,1,refactor,No,Bussiness Error,Same Method,0,编程知识
+1288,0,0,0,0,0,0,0,enhance,Invocation,No,Different Packages,0,基本编程知识；领域知识：JTS几何处理库；项目知识：Rectangle2D类型
+53,0,0,0,0,1,1,1,enhance,Invocation,No,Different Packages,0,编程知识：float和double精度，整数向浮点数的自动类型转换(在同时有float和double的重载函数时，参数为整数会选择float参数的重载函数)；项目知识：Float/Double精度的Rectangle实现
+1286,0,0,0,0,0,0,0,enhance,Invocation,No,Different Packages,0,基本编程知识；领域知识：JTS几何处理库；项目知识：Rectangle2D类型
+999,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,编程知识；领域知识
+138,0,0,0,0,1,0,1,fix,No,Uncaught Exception,Same Location,1,编程知识；领域知识；项目知识
+142,0,0,0,0,1,0,1,fix,Invocation,No,Different Packages,1,项目知识
+157,0,0,0,0,0,0,0,fix,No,Business Error,Same Location,0,基本编程知识
+1591,0,1,0,0,0,0,0,enhance,No,Business Error,Same Method,0,基本编程知识（前后涉及对一个变量的判断）
+1518,0,0,0,0,0,0,0,refactor,No,Unchecked Null,Same Location,0,基本编程知识
+257,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：内部类，继承，可见性；项目知识：要求必须通过DefaultClientClass访问InnerClass的方法类型
+271,0,0,0,0,0,1,0,refactor,Data Flow,No,Different Packages,1,编程知识：switch case中允许string和枚举类型；JDk1.6和1.7关于泛型和switch case的区别
+134,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,1,编程知识：泛型，构造函数；项目知识addActualTypeArgument的处理
+457,0,0,0,0,0,0,0,refactor,No,Business Error,Same Method,0,-1
+457,0,0,0,0,0,0,0,refactor,No,Business Error,Same Method,0,-1
+1343,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,编程知识：布尔表达式
+102,0,1,0,0,0,0,0,refactor,No,Business Error,Same Location,0,getElements
+107,0,0,0,0,0,0,0,refactor,No,API Misuse,Same Method,0,DoubleArrays.reciprocal
+1311,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：下标越界；项目知识：offset数组和pos数组
+140,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,1,override
+98,1,1,0,0,0,1,0,perf,No,Business Error,Same Method,0,编程知识：继承与overload；领域知识：vector的广播；项目知识：父类set的实现正确
+117,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Class,0,基本编程知识；领域知识：线性代数
+1299,0,0,0,0,1,0,1,refactor,Invocation,No,Same Class,0,基本编程知识；领域知识：向量运算；项目知识
+1218,0,1,0,0,1,0,1,build,No,API Misuse,Same Location,0,领域知识：compilationUnit是啥;项目知识JavaRefactoring 干嘛的？
+663,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,领域知识:的number 包含哪些内容
+905,0,0,0,0,0,0,1,enhance,Invocation,No,Same Package,1,领域知识：短路操作；项目知识：CancellableCollector的实现
+780,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Class,0,领域知识：HTML 的格式;项目知识：formatAsBlock和canContainBlock
+796,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,1,项目知识：GLM理解测试用例是对block元素；领域知识：html inline/block相关知识（block和inline在嵌套情况下的节点结构不同）
+799,0,0,0,0,1,1,1,enhance,Invocation,No,Different Packages,1,项目知识：祖先类不允许null初始化
+794,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,项目知识：GLM对测试用例的理解（测试针对block元素是否有多的一行）；领域知识：block/inline元素的格式
+1344,0,0,0,0,1,1,1,enhance,No,Unchecked Null,Same Method,0,基本编程知识
+1296,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,0,领域知识：Stackoverflow原理/概念
+750,0,0,0,0,0,0,0,fix,Data Flow,No,Same Class,1,inline/block
+752,1,0,0,1,1,1,1,Reimpl.,Data Flow,No,Different Packages,1,领域知识：tag/attribute；项目知识：对不正常<的处理方式
+751,0,0,0,0,0,1,1,refactor,No,Unchecked Null,Same Method,0,编程知识：null的处理
+754,0,1,0,0,0,1,1,refactor,No,Business Error,Same Method,0,编程知识：继承与override；领域知识：html节点结构
+772,0,0,0,0,0,0,0,fix,No,Business Error,Same Location,0,基本编程知识；领域知识：html doctype，validate规约
+779,1,0,0,1,1,1,1,Reimpl.,No,Business Error,Different Packages,0,html markup
+1596,0,0,0,0,0,0,0,enhance,No,Business Error,Different Packages,0,编程知识：if判断，列表初始化；领域知识：html meta；项目知识：And和Or Selector的初始化方式
+759,0,0,0,0,0,0,0,enhance,No,Business Error,Same Class,0,编程知识：clone，ArrayList，继承；领域知识：html树结构
+1346,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,基本编程知识；领域知识：html文档结构
+770,0,0,0,0,0,0,0,enhance,Invocation,No,Same Package,1,编程知识：equals与==；项目知识
+1302,0,0,0,0,0,0,0,enhance,Invocation,Uncaught Exception,Same Class,0,编程知识：下标与异常；领域知识：html结构
+864,0,0,0,0,0,1,0,enhance,Data Flow,No,Same Class,0,领域知识：注解反射访问类不能访问私类
+528,0,1,0,0,0,1,0,"enhance,refactor",Data Flow,No,Different Packages,1,项目知识
+32,0,0,0,0,1,0,1,perf,No,Business Error,Same Location,0,项目知识
+42,0,0,0,0,1,0,0,enhance,Data Flow,No,Same Class,1,项目知识
+64,0,0,0,0,1,1,1,enhance,Data Flow,No,Same Class,0,项目知识
+71,0,0,0,0,1,1,1,fix,No,Uncaught Exception,Same Location,0,编程知识：\0作为字符串结尾
+20,0,0,0,0,1,0,1,perf,No,Business Error,Same Location,1,EOF
+43,0,0,0,0,1,0,1,perf,Data Flow,No,Different Packages,0,编程知识：继承；领域知识：输入流
+1428,0,0,0,0,0,0,0,perf,Invocation,No,Different Packages,0,csv quoted string
+39,0,0,0,0,1,0,1,enhance,Invocation,No,Same Class,0,编程知识：参数传递，字符判断；领域知识：csv格式
+54,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,编程知识：数组及越界，下标计算；项目知识：buffer的分配方式
+27,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,基本编程知识
+383,0,0,0,0,0,0,1,fix,Data Flow,No,Different Packages,1,项目知识：modify干嘛的？testMethod.verify();包含access 和check 两个过程
+391,0,0,0,0,0,0,1,fix,Data Flow,No,Same Package,1,项目知识
+399,0,0,0,0,0,0,0,"enhance,refactor",No,Business Error,Same Method,0,领域知识：两种字节码生成库，类加载器
+376,0,0,0,0,1,1,1,enhance,Data Flow,No,Different Packages,1,项目知识：字段值的规约
+411,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Class,0,编程知识：static/final/null，==与equals；项目知识：对于static/final 字段不检查是否为null
+398,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Class,0,编程知识：接口，==与equals；领域知识：反射与类型；项目知识：对接口的检查
+401,0,0,0,0,1,1,1,enhance,Data Flow,No,Same Package,0,基本编程知识；项目知识
+740,0,0,0,0,1,1,1,fix,No,Uncaught Exception,Same Method,0,领域知识：Map contains key时可能涉及类型转换，可能转换失败
+740,0,0,0,0,1,1,1,fix,No,Uncaught Exception,Same Method,0,领域知识：Map contains key时可能涉及类型转换，可能转换失败
+110,0,1,0,0,1,0,1,enhance,Invocation,Business Error,Same Class,0,基于编程知识：System.currentTimeMillis和unit 单位不一样;项目知识：getLockingEntry返回文件的锁
+110,0,1,0,0,1,0,1,enhance,Invocation,Business Error,Same Class,0,基于编程知识：System.currentTimeMillis和unit 单位不一样;项目知识：getLockingEntry返回文件的锁
+115,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Package,0,编程知识；项目知识
+1000,1,1,1,0,1,1,1,"enhance,refactor",No,Business Error,Same Location,0,领域知识
+1001,0,1,0,0,0,1,0,refactor,No,Bussiness Error,Same Class,0,编程知识：继承；领域知识：序列化和序列化接口
+225,0,0,0,0,1,0,1,refactor,No,Unchecked Null,Same Location,0,编程知识
+1301,0,0,0,0,0,1,0,enhance,Data Flow,No,Same Package,0,项目知识：配置项要求
+430,0,0,0,0,0,1,0,refactor,No,Business Error,Same Location,1,基本编程知识：引用类型修改元对象
+1249,0,0,0,0,0,0,0,enhance,No,Unchecked Null,Same Method,0,编程知识：null判断
+666,0,0,0,0,1,1,1,enhance,No,API Misuse,Same Location,0,领域知识：反射接口的处理值
+1572,0,0,0,0,0,0,0,fix,No,Business Error,Same Method,0,项目知识；领域知识
+619,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,编程知识：min和max
+1736,0,0,0,0,0,0,0,fix,Invocation,No,Different Packages,0,项目知识
+1331,0,0,0,0,1,0,1,fix,Invocation,No,Same Package,0,项目知识
+1334,0,0,0,0,0,0,0,perf,No,Business Error,Same Location,0,项目知识
+57,0,0,0,0,1,0,1,fix,Data Flow,No,Same Class,1,编程知识：构造函数；领域知识
+22,0,0,0,0,1,0,1,fix,Data Flow,No,Different Packages,0,classloader
+16,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,编程知识：if条件；领域知识：classfile，白名单；项目知识：是否允许加入未被白名单的
+85,0,0,0,0,0,0,0,refactor,No,Unchecked Null,Same Location,0,项目知识：例如名词（NN）、动词（VB）、形容词（JJ）
+81,0,0,0,0,0,0,1,refactor,Data Flow,No,Different Packages,0,编程知识：异常抛出与捕获；领域知识：Java注解参数；项目知识：未register应该抛出异常
+912,0,0,0,0,1,0,1,refactor,Invocation,No,Same Package,0,编程知识
+204,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,1,项目知识
+209,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：异常抛出
+207,0,0,0,0,1,0,1,enhance,No,Business Error,Same Class,0,基本编程知识
+633,0,0,0,0,0,0,0,fix,No,Business Error,Same Location,0,领域知识：Cloneable类被implements 需要具体的实现clone 实现
+1579,0,0,0,0,1,0,1,fix,Data Flow,No,Same Class,0,领域知识：map嵌套
+696,0,0,0,0,0,0,1,fix,No,Business Error,Same Location,0,":pattern.compile(""/{2,}"");"
+329,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,1,基本编程知识；领域知识：URI Encode，MVC架构
+695,0,1,0,0,1,0,1,fix,No,Unchecked Null,Same Method,0,编程知识：空指针及异常；项目知识：项目REST/MVC架构
+241,1,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,基本编程知识；领域知识：uri格式（host templated）
+190,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,0,领域知识：第三方库TypeReference<List<T>> 和CollectionType
+658,0,0,0,0,1,0,0,"enhance,refactor",Data Flow,No,Different Packages,1,编程知识：Java 类字段默认初始值
+871,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,1,项目知识：对不存在的关键字当作普通别名处理
+823,0,0,0,0,0,0,0,enhance,No,Uncaught Exception,Same Method,0,领域知识：mysql6相关API抛出InvocationTargetException
+820,1,0,0,0,1,1,1,perf,Invocation,No,Same Class,1,语法和领域知识：大整数问题
+1354,0,0,0,0,1,1,1,refactor,Data Flow,No,Different Packages,0,基本编程知识；领域知识：SQL、select group by、访问者模式；项目知识：根据DBType的不同创建不同的visitor
+886,1,0,0,0,1,1,1,"perf,Reimpl.",No,Business Error,Same Method,0,编程知识：Map和数组；领域知识：类似单例模式/懒加载
+846,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,基本编程知识；领域知识：数据库接口，stmt等执行，数据库关闭等，cache
+842,0,0,0,0,1,1,1,enhance,No,Business Error,Same Method,0,基本编程知识
+851,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,编程知识：静态初始化块；领域知识：mysql及parser；项目知识：对注释的解析
+901,0,0,0,0,0,1,0,enhance,Data Flow,No,Same Class,0,基本编程知识；领域知识：sql解析；项目知识
+1709,0,0,0,0,0,0,1,enhance,No,Unchecked Null,Same Method,0,领域知识：nullsafe；编程知识：空指针
+902,0,0,0,0,1,0,1,refactor,No,Business Error,Same Method,0,领域知识：Dockerfile标签格式
+155,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,领域知识：yml配置文件知识
+166,0,0,0,0,0,0,1,fix,No,Business Error,Same Method,0,编程知识：字符串及比较函数；领域知识：yaml格式；项目知识：对节点的抽象
+158,0,0,0,0,0,0,0,enhance,Invocation,No,Same Package,0,编程知识：继承，override；领域知识：yaml格式；项目知识：YamlLine返回String 类型时是否多一个换行
+163,0,0,0,0,0,0,1,fix,No,Business Error,Same Method,0,编程知识：字符串相关函数，正则表达式；领域知识：yaml格式
+841,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,项目知识：是否对source name进行输出
+660,0,0,0,0,0,1,0,refactor,No,Business Error,Same Method,0,编程知识：try-resource 和try-finally
+1687,0,0,0,0,1,0,1,enhance,Data Flow,No,Different Packages,0,基本编程知识
+1683,0,0,0,0,0,0,1,enhance,No,Business Error,Same Method,0,项目知识：Service参数
+124,0,0,0,0,0,1,0,enhance,No,Business Error,Same Method,0,Stackoverflow
+132,0,0,0,0,1,0,1,fix,No,Business Error,Same Method,0,编程知识：循环条件
+445,0,0,0,0,1,0,1,fix,No,Business Error,Same Location,0,G1 concurrent pattern
+849,0,0,0,0,1,0,1,fix,No,Unchecked Null,Same Method,0,编程知识：初始化
+667,0,1,0,0,1,0,1,perf,No,Business Error,Same Method,0,编程知识：位运算（异或用来翻转位，移位运算，最高位）；项目知识：数据处理库，需要对整数进行变换（encode）
+671,0,1,0,0,1,1,1,enhance,Invocation,No,Same Package,1,编程知识：移位运算，set；项目知识：size不同的set不允许merge
+316,0,0,0,0,1,0,1,fix,Data Flow,No,Same Class,0,基本编程知识
+320,0,0,0,0,1,1,1,fix,Invocation,No,Same Class,1,编程知识：基本语句+位运算；领域知识：literal word和word
+306,0,0,0,0,1,0,1,perf,No,Business Error,Same Location,0,基本编程知识
+1716,0,0,0,0,0,0,0,enhance,No,API Misuse,Same Location,0,KMS
+661,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,领域知识：消息头/消息体/报文协议
+645,0,0,0,0,1,0,1,enhance,Invocation,No,Same Class,1,编程知识：二进制位与位运算；项目知识：Japan Futoshiki Puzzle as grids与相关规则计算
+876,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Class,0,基本编程知识；领域知识：Collections.emptyMap和new HashMap创建空Map的区别
+1269,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识：异常抛出，逻辑运算
+1536,0,1,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识
+1744,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,1,编程知识：抛异常
+1722,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：抛异常
+1720,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：异常抛出与程序执行流；领域知识：网络与namespace配置；项目知识：是否允许配置成空字符串（empty，不是null）
+1256,0,0,0,0,0,0,0,refactor,No,Bussiness Error,Same Class,0,TCP Connection
+270,0,0,0,0,1,0,1,refactor,No,Business Error,Same Method,0,编程知识：死循环，参数传递
+262,0,0,0,0,1,0,1,enhance,Invocation,No,Same Package,0,基本编程知识；领域知识：时间戳格式；项目知识：对parseDatestamp和parseTimestamp的实现
+1243,1,0,0,0,0,1,1,refactor,No,Business Error,Different Packages,0,编程知识：模运算
+845,0,1,0,0,1,0,1,fix,No,Business Error,Same Location,0,基本编程知识；领域知识；joda-time等解析时间库
+1733,0,0,0,0,0,0,0,refactor,No,API Misuse,Same Class,0,基本编程知识；领域知识：http，Netty与IdleStateHandler
+840,0,0,0,0,1,0,1,refactor,Data Flow,No,Same Package,0,编程知识：null；领域知识：Collection.emptyList();项目知识：当不为null时增加该字段
+561,0,0,0,0,0,1,0,enhance,No,Unchecked Null,Same Location,0,编程知识：字符串与初始化；领域知识：StringReader参数@NotNull
+562,0,0,0,0,1,1,1,enhance,No,Unchecked Null,Same Class,0,编程知识：变量初始化；领域知识：Jackson JSON库，JSONParser
+652,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,基本编程知识；领域知识：文件和目录
+218,0,0,0,0,1,1,1,refactor,Data Flow,No,Same Package,0,编程知识：条件判断；领域知识：html渲染
+11,0,0,0,0,1,0,1,fix,No,API Misuse,Same Location,0,编程知识：随机数；领域知识：BigDecimal类及其舍入模式；
+9,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：浮点数舍入；领域知识：BigDecimal 及setscale
+31,0,1,0,0,1,0,1,enhance,Invocation,No,Same Class,0,编程知识：表达式，null与判空；领域知识：代码静态分析与扫描；项目知识：空语句的复杂度应该为0
+33,0,1,0,0,1,1,1,enhance,No,Uncaught Exception,Same Location,0,编程知识：异常捕获
+30,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,0,编程知识：异常处理
+954,1,0,0,0,1,1,1,enhance,Invocation,No,Different Packages,0,List/Collection
+363,1,0,0,0,0,1,0,enhance,No,Business Error,Same Method,0,编程知识：程序控制流+抛异常；领域知识：SMUS(Smallest Minimal Unsatisfiable Subset)算法；项目知识：smus无法计算的处理
+374,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,编程知识：继承，override，运算符；项目知识：FormulaFactory
+631,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,编程知识：异常抛出；领域知识：xml节点与元素；项目知识：对插入元素的限制
+632,0,0,0,0,1,0,1,enhance,No,Business Error,Same Location,0,编程知识：继承，泛型与类型转换；领域知识：Document和Element的区别
+534,0,0,0,0,0,0,0,enhance,Invocation,No,Same Package,0,编程知识：bool字段、构造函数初始化、null；领域知识：json中null k-v对；项目知识：将null分成两种情况
+650,1,1,1,0,1,1,1,refactor,No,Business Error,Same Method,0,基本编程知识；领域知识：报文字节解析；项目知识：相邻代码对pos变量的更新
+662,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,编程知识：null判断与异常抛出；领域知识：IP地址，UDP协议
+618,0,0,0,0,0,0,0,enhance,Invocation,No,Same Package,1,编程知识：字符串处理和判断，null与null的print；领域知识：转义字符，多线程
+282,0,0,1,0,1,1,1,enhance,No,Business Error,Same Method,0,基本编程知识；项目知识：Tuple中score的实现
+651,0,0,0,0,0,1,0,fix,Data Flow,No,Same Class,0,编程知识：继承、override、泛型、桥接方法与类型擦除
+664,0,0,0,0,0,0,1,enhance,No,Business Error,Same Location,0,基本编程知识；领域知识：文件与目录，文件路径
+743,0,0,0,0,0,0,0,enhance,No,Business Error,Same Location,0,编程知识：抽象方法，Optional容器类；领域知识：LAN；项目知识：低版本不支持LAN
+419,0,0,0,0,0,0,1,refactor,No,API Misuse,Same Location,0,编程知识：Java包；领域知识：HTTP请求头，netty及两个包的区别
+1756,0,0,0,0,0,0,1,enhance,Invocation,Business Error,Same Method,0,编程知识：位运算；领域知识：BitSet及valueof；项目知识：兼容JDK6导致部分API无法使用
+599,0,1,0,0,1,0,1,refactor,No,Business Error,Same Class,1,Linux stun client
+60,0,0,0,0,0,0,1,fix,Data Flow,No,Same Package,0,基本编程知识；项目知识：对UnspportedOperation的处理情况

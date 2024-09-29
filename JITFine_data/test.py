@@ -55,6 +55,8 @@ def main():
             tmp.extend([commits_stat[commit][key] for key in commits_stat[commit].keys()])
             # append bug ids
             tmp.append(data[(data['project_name'] == project) & (data['commit_hash'] == commit)]['ID'].values[0])
+            if commit[1] == '_':
+                tmp[2] = commit
             result.append(tmp)
         # break
     return result
