@@ -56,7 +56,7 @@ ID,JITSmart,JITFine,JITLine,LaPredict,DeeperJIT,Deeper,CC2Vec,Bic Action Type,Co
 342,0,0,0,0,1,0,1,fix,No,Cast Error,Same Method,0,编程知识：继承，泛型；领域知识：反射
 393,1,0,0,0,1,1,0,refactor,Data Flow,No,Different Packages,0,编程知识：条件分支，默认值；领域知识：反序列化等
 97,0,1,0,0,1,0,1,fix,Data Flow,No,Different Packages,0,编程知识：程序执行流，if判断，字符串；领域知识：日期格式，字符串反序列化
-462,0,0,0,0,1,0,1,refactor,No,Bussiness Error,Same Method,0,基本编程知识；
+462,0,0,0,0,1,0,1,refactor,No,Business Error,Same Method,0,基本编程知识；
 72,0,0,0,0,0,0,0,perf,No,Business Error,Same Method,0,基本编程知识
 605,0,0,0,0,1,0,1,enhance,No,Unchecked Null,Same Location,0,ResolveTask
 1570,0,0,0,0,0,0,0,enhance,Data Flow,No,Different Packages,0,编程知识：继承；领域知识：序列化与反序列化
@@ -113,7 +113,7 @@ ID,JITSmart,JITFine,JITLine,LaPredict,DeeperJIT,Deeper,CC2Vec,Bic Action Type,Co
 484,0,0,0,0,1,0,1,enhance,Invocation,No,Same Package,0,编程知识；领域知识；GPT 什么是TLD和ETLD 和PTLD；项目知识：项目中ETLD支持了私有域名，PTLD不允许支持私有域名
 476,1,0,0,0,0,1,0,enhance,Data Flow,No,Different Packages,1,基本编程知识；领域知识：爬虫，html结构，DOM
 1352,0,0,0,0,0,0,0,enhance,No,Business Error,Same Method,0,编程知识：overload；领域知识：PLD和TLD
-1240,0,0,0,0,1,1,1,refactor,No,Bussiness Error,Same Method,0,编程知识
+1240,0,0,0,0,1,1,1,refactor,No,Business Error,Same Method,0,编程知识
 1288,0,0,0,0,0,0,0,enhance,Invocation,No,Different Packages,0,基本编程知识；领域知识：JTS几何处理库；项目知识：Rectangle2D类型
 53,0,0,0,0,1,1,1,enhance,Invocation,No,Different Packages,0,编程知识：float和double精度，整数向浮点数的自动类型转换(在同时有float和double的重载函数时，参数为整数会选择float参数的重载函数)；项目知识：Float/Double精度的Rectangle实现
 1286,0,0,0,0,0,0,0,enhance,Invocation,No,Different Packages,0,基本编程知识；领域知识：JTS几何处理库；项目知识：Rectangle2D类型
@@ -181,7 +181,7 @@ ID,JITSmart,JITFine,JITLine,LaPredict,DeeperJIT,Deeper,CC2Vec,Bic Action Type,Co
 110,0,1,0,0,1,0,1,enhance,Invocation,Business Error,Same Class,0,基于编程知识：System.currentTimeMillis和unit 单位不一样;项目知识：getLockingEntry返回文件的锁
 115,0,0,0,0,0,0,1,enhance,Data Flow,No,Same Package,0,编程知识；项目知识
 1000,1,1,1,0,1,1,1,"enhance,refactor",No,Business Error,Same Location,0,领域知识
-1001,0,1,0,0,0,1,0,refactor,No,Bussiness Error,Same Class,0,编程知识：继承；领域知识：序列化和序列化接口
+1001,0,1,0,0,0,1,0,refactor,No,Business Error,Same Class,0,编程知识：继承；领域知识：序列化和序列化接口
 225,0,0,0,0,1,0,1,refactor,No,Unchecked Null,Same Location,0,编程知识
 1301,0,0,0,0,0,1,0,enhance,Data Flow,No,Same Package,0,项目知识：配置项要求
 430,0,0,0,0,0,1,0,refactor,No,Business Error,Same Location,1,基本编程知识：引用类型修改元对象
@@ -246,7 +246,7 @@ ID,JITSmart,JITFine,JITLine,LaPredict,DeeperJIT,Deeper,CC2Vec,Bic Action Type,Co
 1744,0,0,0,0,1,0,1,enhance,No,Business Error,Same Method,1,编程知识：抛异常
 1722,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：抛异常
 1720,0,0,0,0,1,1,1,enhance,No,Business Error,Same Location,0,编程知识：异常抛出与程序执行流；领域知识：网络与namespace配置；项目知识：是否允许配置成空字符串（empty，不是null）
-1256,0,0,0,0,0,0,0,refactor,No,Bussiness Error,Same Class,0,TCP Connection
+1256,0,0,0,0,0,0,0,refactor,No,Business Error,Same Class,0,TCP Connection
 270,0,0,0,0,1,0,1,refactor,No,Business Error,Same Method,0,编程知识：死循环，参数传递
 262,0,0,0,0,1,0,1,enhance,Invocation,No,Same Package,0,基本编程知识；领域知识：时间戳格式；项目知识：对parseDatestamp和parseTimestamp的实现
 1243,1,0,0,0,0,1,1,refactor,No,Business Error,Different Packages,0,编程知识：模运算

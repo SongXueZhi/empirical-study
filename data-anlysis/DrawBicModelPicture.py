@@ -120,32 +120,38 @@ def draw_picture(_tag_column: str):
 
 
 def draw_tables(_results_dict: dict):
-    table_columns = ['Feature'] + models
+    table_columns = ['Feature', 'Total Count'] + models
+    table_per_columns = ['Feature'] + models
 
     # print(results_dict['self_error_result'])
 
     dataframe = pd.DataFrame(columns=table_columns)
-    dataframe_per = pd.DataFrame(columns=table_columns)
+    dataframe_per = pd.DataFrame(columns=table_per_columns)
 
     for key, value in _results_dict.items():
         for tag in value[models[0]].keys():
             if tag in black_list:
                 continue
-            row = [tag]
+            row = [tag, f'{value[models[0]][tag][0] + value[models[0]][tag][1]}']
             row_per = [tag]
             for model in models:
-                row.append(value[model][tag][1])
-                row_per.append(f'{value[model][tag][1] / (value[model][tag][1] + value[model][tag][0]):.2f}%')
+                val = value[model][tag][1]
+                if val == 0:
+                    row.append('--')
+                    row_per.append('0.00%')
+                else:
+                    row.append(f'{val}')
+                    row_per.append(f'{val / (val + value[model][tag][0]) * 100:.2f}%')
             dataframe.loc[len(dataframe)] = row
             dataframe_per.loc[len(dataframe_per)] = row_per
-    row = ['Total']
+    row = ['Total', f'{total_bugs}']
     row_per = ['Total']
 
     for model in models:
         pred_sum = 0
         for tag in _results_dict['self_error_result'][models[0]].keys():
             pred_sum += _results_dict['self_error_result'][model][tag][1]
-        row.append(pred_sum)
+        row.append(f'{pred_sum}')
         row_per.append(f'{pred_sum / total_bugs * 100:.2f}%')
 
     dataframe.loc[len(dataframe)] = row
@@ -162,8 +168,8 @@ results_dict = {'self_error_result': count_0_1_by_column(self_error),
                 'knowledge_result': count_0_1_by_column(knowledge)}
 draw_tables(_results_dict=results_dict)
 
-draw_picture(_tag_column=self_error)
-draw_picture(_tag_column=suitable_error)
-draw_picture(_tag_column=feature_interaction)
-draw_picture(_tag_column=fix_location)
-draw_picture(_tag_column=knowledge)
+# draw_picture(_tag_column=self_error)
+# draw_picture(_tag_column=suitable_error)
+# draw_picture(_tag_column=feature_interaction)
+# draw_picture(_tag_column=fix_location)
+# draw_picture(_tag_column=knowledge)
