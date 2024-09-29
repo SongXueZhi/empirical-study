@@ -1,7 +1,10 @@
 import pygit2
 
+
 def getDiffFromRepo(repoPath, commit_hash):
     repo = pygit2.Repository(repoPath)
+    if commit_hash[1] == '_':
+        commit_hash = commit_hash[2:]
     commit = repo.revparse_single(commit_hash)
     # 获取提交的第一个父提交
     parent_commit = commit.parents[0]
@@ -38,7 +41,8 @@ def getDiffFromRepo(repoPath, commit_hash):
             'removed_code': removed_lines
         }
     return file_changes
-   
+
+
 if __name__ == '__main__':
     repoPath = '/Users/sxz/Documents/coding/project/empirical-study/JITFine_data/repos/cron-utils'
     commit_hash = 'ff67527e69868a2c2b05ab8a1ddcca8d8f896e44'
