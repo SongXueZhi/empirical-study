@@ -11,6 +11,7 @@ import copy
 
 # file_path ='/Users/sxz/Documents/coding/project/JITFine_data/data/fastjson_regression_bugs.pkl'  # sys.argv[1]
 file_path = './data/all_regression_bugs.pkl'
+bfc_file_path = './data/secondFilteredBfcsnot84.pkl'
 def getLogger(log_file):
     # Set up the logger
 
@@ -34,8 +35,11 @@ def getLogger(log_file):
     return logging
 
 
-def main():
-    data = pd.read_pickle(file_path)
+def main(_file_path=file_path):
+    if file_path.endswith('.csv'):
+        data = pd.read_csv(_file_path)
+    else:
+        data = pd.read_pickle(_file_path)
     data.loc[:, 'msg'] = None
     print(data.shape, data.drop_duplicates().shape)
     projects = list(data['project_name'].drop_duplicates())
@@ -51,7 +55,7 @@ def main():
             if commit[1] == '_':
                 commits_stat[commit] = copy.deepcopy(commits_stat[commit[2:]])
 
-            commits_stat[commit]['commit_message'] = commits_msg[commit]
+            commits_stat[commit]['commit_message'] = commits_msg[commit].replace('\n', ' ').replace('\r', ' ')
             tmp.extend([commits_stat[commit][key] for key in commits_stat[commit].keys()])
             # append bug ids
             tmp.append(data[(data['project_name'] == project) & (data['commit_hash'] == commit)]['ID'].values[0])
@@ -63,12 +67,12 @@ def main():
 
 
 if __name__ == '__main__':
-    ret = main()
+    # ret = main()
     # 'commit_message', 'la', 'ld',  'nf', 'ns', 'nd', 'entropy', 'ndev', 'lt', 'nuc', 'age', 'exp', 'rexp', 'sexp', 'fix'
     columns = ['project', 'parent_hashes', 'commit_hash', 'author_name', 'author_email', 'author_date',
                'author_date_unix_timestamp', 'commit_message', 'la', 'ld', 'fileschanged', 'nf', 'ns', 'nd',
                'entropy', 'ndev', 'lt', 'nuc', 'age', 'exp', 'rexp', 'sexp', 'classification', 'fix', 'ID']
-    data = pd.DataFrame(ret, columns=columns)
+    # data = pd.DataFrame(ret, columns=columns)
     # print(data)
     import os
     current_directory = os.getcwd()
@@ -80,6 +84,12 @@ if __name__ == '__main__':
     if not project_path.exists():
         project_path.mkdir(parents=True, exist_ok=True)
     output_file = os.path.join(project_path, 'metrics.pkl')
+    # data.to_pickle(output_file)
+    # data.to_csv(os.path.join(project_path, 'metrics.csv'), index=False)
+
+    ret = main(_file_path=bfc_file_path)
+    data = pd.DataFrame(ret, columns=columns)
+    output_file = os.path.join(project_path, 'bfc_metricsnot84.pkl')
     data.to_pickle(output_file)
-    data.to_csv(os.path.join(project_path, 'metrics.csv'), index=False)
+    data.to_csv(os.path.join(project_path, 'bfc_metricsnot84.csv'), index=False)
         # pickle.dump(data, open("./data/all_changes_data/metrics.pkl", "wb"), protocol=4)

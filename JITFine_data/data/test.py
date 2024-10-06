@@ -2,7 +2,7 @@ import pickle
 
 import pandas as pd
 import os
-from data.utils import preprocess_code_line
+from utils import preprocess_code_line
 
 
 def get_complete_buggy_line_leve_file():
@@ -11,7 +11,8 @@ def get_complete_buggy_line_leve_file():
     # data.columns = ['commit_hash', 'idx', 'changed_type', 'is_buggy_line', 'raw_changed_line',
     #                 'code_change_remove_common_tokens']
     # # data.to_pickle('/data1/kaiwenyang/JITFine/dataset/jitline/ww_format/changes_complete_buggy_line_level.pkl')
-    newpath = os.path.join(os.getcwd(),'JITFine_data', 'data')
+    # newpath = os.path.join(os.getcwd(),'JITFine_data', 'data')
+    newpath = os.path.join(os.getcwd())
 
     # jitline,jitfine
     data = pickle.load(open(newpath + '/changes_reg_test.pkl', 'rb'))
